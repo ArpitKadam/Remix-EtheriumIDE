@@ -1,0 +1,98 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test",
+				"outputs": [
+					{
+						"internalType": "enum ImportEnum.EnumTest",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ImportEnum.sol": "ImportEnum"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Enum.sol": {
+			"keccak256": "0xcaea94d663486a7d1539adc2da813e635cacc865a0fa2f4d9161ea8b90e36cc3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f8b2ecb53d8a774bb1dd472ee21b16f74cc28524e4bd13aadf81457b6ec91f12",
+				"dweb:/ipfs/QmYQyREHYy1NLWqqE9R6GsgUXiDRKwAeyWbtJ5rzecxaXG"
+			]
+		},
+		"contracts/ImportEnum.sol": {
+			"keccak256": "0x5b8b012b120e823033a9c9b06cac9792806a213ed5ba2391f5a6aa73e69e7cfd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://efca87167fc5906f096428543aa475bc65a60966f5b2adc26c2a59d1ce363dad",
+				"dweb:/ipfs/QmZxjoxLQ6CrTLA1E3Godoar4PhezshL4pxpqhdu1vBbHA"
+			]
+		}
+	},
+	"version": 1
+}
