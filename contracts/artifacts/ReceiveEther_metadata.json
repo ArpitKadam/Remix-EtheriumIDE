@@ -7,16 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "foo",
+				"name": "getBalance",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -32,7 +36,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Inheritance.sol": "E"
+			"contracts/SendingEther.sol": "ReceiveEther"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -46,12 +50,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Inheritance.sol": {
-			"keccak256": "0x86063997ec6bb3f8aeb7a4c7b137fbfafeb7356cde2e14ed29f82037697fd0da",
+		"contracts/SendingEther.sol": {
+			"keccak256": "0xe3e71a2dc81d30928e761256cd256e76e12d45f501924eaee58cb329594edabd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://760c83e76a0d6b186831579d8e6636e702dbe677d180900db68e55262a508c14",
-				"dweb:/ipfs/QmW1NQ7Sz6gJXdBqfmHxFPXKFj634acSH8v1qiL92EbCbs"
+				"bzz-raw://c390b707a8dea648ed70575aef907e4d5b1b1243ec156a53bcfa659276b92d4a",
+				"dweb:/ipfs/QmV2RoZD3E8fXATYwpi5r4RNwqcvcjteL1NLs4RQ8CMAqB"
 			]
 		}
 	},

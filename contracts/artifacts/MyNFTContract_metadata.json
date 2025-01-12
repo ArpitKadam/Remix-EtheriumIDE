@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/data_types.sol": "DataTypes"
+			"contracts/SendingEther.sol": "MyNFTContract"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/data_types.sol": {
-			"keccak256": "0x07581a8caacd01ae0ab61cfba98b2fd914e40d32d1ac99cfc2a4531460b2ff3d",
+		"contracts/SendingEther.sol": {
+			"keccak256": "0x6bc12c91b148d510a2004319d1fa6137e52d9a18ba4793e799a697807b559c5e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://48bf23a4d001b7a8be77137c1066ee2b13c6bf1cf5c40d757619b5b774cc55d2",
-				"dweb:/ipfs/QmcL9X6FRNQ331TZf8ZB3fJAseQFUAg1MCwdJMmbiHjzYr"
+				"bzz-raw://53f897e5d5135c5f4a0d183875a890ca663557cf97ee6189ce7afcc68121e454",
+				"dweb:/ipfs/Qmf16JZThfwh3GHDLDuEvPhWU543pYNXdWcUt2JkrwziAX"
 			]
 		}
 	},
