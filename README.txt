@@ -1,28 +1,46 @@
-REMIX DEFAULT WORKSPACE
+# Remix-EthereumIDE Solidity Learning Repository
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+This repository contains various files and contracts I am working on while learning Solidity using the Remix-EthereumIDE.
 
-This workspace contains 3 directories:
+## Project Structure
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+- `.deps` - Directory containing dependency files used in the project.
+- `.states` - Stores state information for the Remix environment.
+- `contracts` - Contains the Solidity smart contracts of varying complexity that I'm developing.
+- `scripts` - Includes TypeScript files for deploying contracts using `web3.js` and `ethers.js`.
+  - `deploy_with_ethers.ts` - Script to deploy a contract using `ethers.js`.
+  - `deploy_with_web3.ts` - Script to deploy a contract using `web3.js`.
+- `tests` - Contains test files for contract validation.
+  - Mocha-Chai unit tests for the `Storage` contract.
+  - JS tests for the `Storage` contract.
+- `.prettierrc.json` - Configuration file for Prettier to format Solidity code.
+- `README.txt` - This README file explaining the project structure.
 
-SCRIPTS
+## How to Use
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+### Scripts
 
-For the deployment of any other contract, just update the contract name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+The `scripts` folder contains TypeScript files used for deploying the `Storage` contract. To deploy any other contract, simply update the contract name and constructor arguments in `deploy_with_ethers.ts` or `deploy_with_web3.ts`.
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+To run a script:
+1. Ensure that the Solidity file is compiled.
+2. Right-click on the desired script in the Remix file explorer.
+3. Click `Run`.
+4. Output will be displayed in the Remix terminal.
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+### Testing
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+The `tests` folder contains test scripts for Solidity contracts. To run the tests:
+1. Ensure the relevant Solidity contract is compiled.
+2. Run the test files using the Remix test runner or use Mocha-Chai framework for unit testing.
+
+### Dependencies
+
+Remix supports the following modules for deployment and testing:
+- `ethers`, `web3`, `swarmgw`, `chai`, `multihashes`, `remix`, and `hardhat` (for Hardhat plugin).
+  
+Unsupported modules will throw errors indicating the issue.
+
+## License
+
+This project is licensed under the MIT License.
