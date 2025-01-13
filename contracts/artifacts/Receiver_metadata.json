@@ -17,7 +17,7 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "ammount",
+						"name": "amount",
 						"type": "uint256"
 					},
 					{
@@ -57,6 +57,10 @@
 				],
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -87,11 +91,11 @@
 	},
 	"sources": {
 		"contracts/CallFunction.sol": {
-			"keccak256": "0x4c8c88c05ab14da94b758bfb1e982ecdeb9744ed1edff0319e1c0a427fdd44ac",
+			"keccak256": "0x91501511325933c3f7e716183b0c9adfd7fdaaf7706467eaa928acb5f369e389",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9ba283b219ccbe607243789e9190a02040e1c078dad30193fcc17ec44cdafab6",
-				"dweb:/ipfs/QmYLaZFr9sg293cZ45iKzz2hz5WCcBZKgAVYBppxbGnzqc"
+				"bzz-raw://91b6107b9005accc35bee2c015c8d1e0d20c88ece1d12ed4903da2b626aa74b9",
+				"dweb:/ipfs/QmbeHh2XbCz12JbFbsgoFe9TXveWDWxiey5vgcuM6dUWfH"
 			]
 		}
 	},

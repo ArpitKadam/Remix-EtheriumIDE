@@ -73,11 +73,11 @@
 	},
 	"sources": {
 		"contracts/SendingEther.sol": {
-			"keccak256": "0xe3e71a2dc81d30928e761256cd256e76e12d45f501924eaee58cb329594edabd",
+			"keccak256": "0xf5419b7b549d034032a058c3aa3bf8f62ac951f03a983bc38084dc7d0ea27e18",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c390b707a8dea648ed70575aef907e4d5b1b1243ec156a53bcfa659276b92d4a",
-				"dweb:/ipfs/QmV2RoZD3E8fXATYwpi5r4RNwqcvcjteL1NLs4RQ8CMAqB"
+				"bzz-raw://d4917e9fb6ade8c628c1084be79596ffd3390b105e00522715f142315ef6f444",
+				"dweb:/ipfs/QmNkeSkhhtY6GgtT26LUhpYqU9HrR869d58XguobSYU4Wa"
 			]
 		}
 	},

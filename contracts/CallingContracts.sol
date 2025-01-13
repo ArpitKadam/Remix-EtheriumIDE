@@ -2,12 +2,11 @@
 
 pragma solidity ^0.8.13;
 
-contract Callee{
-
+contract Callee {
     uint public x;
     uint public value;
 
-    function setX(uint _x) public returns (uint){
+    function setX(uint _x) public returns (uint) {
         x = _x;
         return x;
     }
@@ -20,18 +19,17 @@ contract Callee{
     }
 }
 
-contract Caller{
+contract Caller {
+    event SetX(uint x);
+    event SetXAndSendEther(uint x, uint value);
 
     function setX(Callee _callee, uint _x) public {
         uint x = _callee.setX(_x);
-    } 
-
-    function setXfromAddress(address _addr, uint _x) public {
-        Callee callee = Callee(_addr);
-        callee.setX(_x);
+        emit SetX(x); // Emit the value of x
     }
 
     function setXandsendEther(Callee _callee, uint _x) public payable {
         (uint x, uint value) = _callee.setXandsendEther{value: msg.value}(_x);
+        emit SetXAndSendEther(x, value); // Emit the values of x and value
     }
 }

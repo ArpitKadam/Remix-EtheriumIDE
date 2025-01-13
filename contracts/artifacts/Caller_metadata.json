@@ -6,40 +6,23 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "contract Callee",
-						"name": "_callee",
-						"type": "address"
+						"indexed": false,
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
 					},
 					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
 					}
 				],
-				"name": "setX",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "contract Callee",
-						"name": "_callee",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
-					}
-				],
-				"name": "setXandsendEther",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
+				"name": "Response",
+				"type": "event"
 			},
 			{
 				"inputs": [
@@ -47,16 +30,24 @@
 						"internalType": "address",
 						"name": "_addr",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
 					}
 				],
-				"name": "setXfromAddress",
+				"name": "testCallDoesNotExist",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "testCallFoo",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -73,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/CallingContracts.sol": "Caller"
+			"contracts/CallFunction.sol": "Caller"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -87,12 +78,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/CallingContracts.sol": {
-			"keccak256": "0xc1dbf2a3c8a5eed8cc835f4e4771d34f5466a2fc6c9c60612fe36d1b6ef1047f",
+		"contracts/CallFunction.sol": {
+			"keccak256": "0x91501511325933c3f7e716183b0c9adfd7fdaaf7706467eaa928acb5f369e389",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://85123533850e4ce24c053ca1dde0da33aa7f47c4dc6f7f41168769da69293928",
-				"dweb:/ipfs/QmZgYE9Lxi8WZPRgmrwHvxa4YWTZVG3i6dthw4PjqyCSAU"
+				"bzz-raw://91b6107b9005accc35bee2c015c8d1e0d20c88ece1d12ed4903da2b626aa74b9",
+				"dweb:/ipfs/QmbeHh2XbCz12JbFbsgoFe9TXveWDWxiey5vgcuM6dUWfH"
 			]
 		}
 	},
